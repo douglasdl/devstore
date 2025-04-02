@@ -1,21 +1,15 @@
 import { z } from 'zod'
 import data from '../data.json'
 
-export interface ProductProps {
-  params: {
-    slug: string
-  }
-}
-
-export async function GET(_: Request, { params }: ProductProps) {
+export async function GET(
+  _: Request,
+  { params }: { params: { slug: string } }
+) {
   await new Promise(resolve => setTimeout(resolve, 1000))
 
-  if (!params?.slug) {
-    return Response.json({ message: 'Slug is required.' }, { status: 400 })
-  }
-
-  const slug = z.string().parse(params.slug)
-  const product = data.products.find(product => product.slug === slug)
+  const { slug } = await params
+  const safeSlug = z.string().parse(slug)
+  const product = data.products.find(product => product.slug === safeSlug)
 
   if (!product) {
     return Response.json(
