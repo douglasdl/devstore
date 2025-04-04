@@ -46,6 +46,7 @@ brew install gh
 
 
 ```sh
+gh auth login
 gh repo create
 gh repo view -w
 ```
