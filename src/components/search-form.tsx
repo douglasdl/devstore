@@ -10,7 +10,7 @@ export function SearchForm() {
   const query = searchParams.get('q')
 
   function handleSearch(event: FormEvent<HTMLFormElement>) {
-    event?.preventDefault()
+    event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
     const data = Object.fromEntries(formData)

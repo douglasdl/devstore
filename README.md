@@ -18,6 +18,8 @@ pnpm i cypress -D
 Open Cypress:
 ```sh
 pnpm cypress open
+# or in the terminal
+pnpm cypress run
 ```
 
 Start the development app:
@@ -35,6 +37,20 @@ Start the production app:
 pnpm run start
 ```
 
+## Create and publish to Github using [Github CLI](https://cli.github.com/manual/):
+
+Install:
+```sh
+brew install gh
+```
+
+
+```sh
+gh repo create
+gh repo view -w
+```
+
 - [Figma](https://www.figma.com/design/sfmlyWmFxZZY1fx8hTC6UP/devstore-•-Projeto-React?node-id=201-2&p=f&t=K1GkcFjQYS3pZfTN-0)
 
 - [Cypress](https://www.cypress.io): End to End Tests Automation.
+

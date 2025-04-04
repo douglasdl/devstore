@@ -3,7 +3,6 @@ import type { Product } from '@/data/types/product'
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
-import data from '../../api/products/data.json'
 
 interface SearchProps {
   searchParams: {
