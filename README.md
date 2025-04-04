@@ -13,6 +13,7 @@ pnpm i lucide-react
 pnpm i zod
 pnpm i tailwind-merge
 pnpm i cypress -D
+pnpm add @t3-oss/env-nextjs
 ```
 
 Open Cypress:
@@ -48,6 +49,13 @@ brew install gh
 ```sh
 gh auth login
 gh repo create
+gh repo view -w
+```
+
+Create pull request
+```sh
+# gh checkout new-branch-name
+gh pr create
 gh repo view -w
 ```
 
