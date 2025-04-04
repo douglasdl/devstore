@@ -52,5 +52,5 @@ gh repo view -w
 
 - [Figma](https://www.figma.com/design/sfmlyWmFxZZY1fx8hTC6UP/devstore-•-Projeto-React?node-id=201-2&p=f&t=K1GkcFjQYS3pZfTN-0)
 
-- [Cypress](https://www.cypress.io): End to End Tests Automation.
+- [Cypress](https://www.cypress.io): End to End Tests Automation. (Github Actions)[https://docs.cypress.io/app/continuous-integration/github-actions#Basic-Setup]
 
